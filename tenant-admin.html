@@ -61,12 +61,17 @@ body,button,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"
 .sticky-edge th:last-child,.sticky-edge td:last-child{position:sticky;right:0;z-index:2;min-width:112px;background:#fff;box-shadow:-5px 0 8px -8px rgba(17,45,82,.45)}
 .sticky-edge thead th:first-child,.sticky-edge thead th:last-child{z-index:3;background:#eaf3ff}
 .sticky-edge tbody tr:hover td:first-child,.sticky-edge tbody tr:hover td:last-child{background:#f1f7ff}
+.sticky-edge th,.sticky-edge td{white-space:nowrap}.sticky-edge th:last-child,.sticky-edge td:last-child{min-width:180px;width:max-content}.sticky-edge td:last-child .btn{white-space:nowrap}
 /* 高区分度业务标签 */
 .tag{display:inline-flex;align-items:center;min-height:24px;padding:2px 8px;border-width:1px;border-style:solid;border-radius:5px;font-weight:600;line-height:1.35;white-space:nowrap}
 .tag.success{color:#05603a;background:#d1fadf;border-color:#32d583}.tag.info{color:#1849a9;background:#dbeafe;border-color:#60a5fa}
 .tag.proxy{color:#7a2e0e;background:#ffedd5;border-color:#fb923c}.tag.warn{color:#854a0e;background:#fef0c7;border-color:#f79009}
 .tag.bad{color:#b42318;background:#fee4e2;border-color:#f97066}.tag.gray{color:#344054;background:#f2f4f7;border-color:#98a2b3}
 .tag.enter{color:#05603a;background:#d1fadf;border-color:#32d583}.tag.exit{color:#3538cd;background:#e0e7ff;border-color:#818cf8}
+/* 笔记本首屏与操作可读性校正 */
+.home-lists{align-items:start}.home-panel{height:auto;align-self:start}.home-panel th,.home-panel td{padding-top:9px;padding-bottom:9px}.home-panel .pager{min-height:42px}
+.btn,.btn.text{white-space:nowrap}.btn.primary:hover{color:#fff;background:linear-gradient(135deg,#247fe9,#0b5fd7);border-color:#0b5fd7}.btn.text:hover{color:#0b5fc7;background:#eaf3ff;box-shadow:none}
+@media(max-height:900px) and (min-width:1051px){main{padding-top:112px;padding-bottom:18px}.hero-overview{min-height:292px}.hero-content{padding:24px 34px 18px}.hero-greeting h1{font-size:26px}.hero-metrics{margin-top:28px}.hero-metric{min-height:108px;padding:11px 13px}.hero-metric i{width:28px;height:28px;margin-bottom:5px}.hero-metric b{font-size:24px;margin:4px 0 3px}.hero-meta{height:36px}.home-lists{gap:10px}.home-panel .panel-head{height:40px}.home-panel th,.home-panel td{padding-top:7px;padding-bottom:7px}.home-panel .pager{min-height:36px;padding-top:7px;padding-bottom:7px}}
 
 
 </style>
