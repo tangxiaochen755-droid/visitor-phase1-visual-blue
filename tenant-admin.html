@@ -4,6 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>一期 · 租户管理端 · 浅蓝视觉版</title>
 <link href="./assets/remixicon/remixicon.css" rel="stylesheet">
+<link rel="preload" href="./assets/visitor-reception-hero.webp" as="image" type="image/webp">
 <style>
 :root{--side:224px;--line:#d9dde2;--line2:#eceef1;--ink:#1d2024;--muted:#747980;--dark:#25292e}
 *{box-sizing:border-box}html{-webkit-font-smoothing:antialiased}body{margin:0;background:#f3f4f6;color:var(--ink);font:14px "PingFang SC","Microsoft YaHei",sans-serif;font-variant-numeric:tabular-nums}button,input,select,textarea{font:inherit}button{cursor:pointer;transition-property:transform,background-color,border-color;transition-duration:.16s}button:active{transform:scale(.96)}
@@ -90,13 +91,40 @@ body,button,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"
   <div class="group">租户设置</div>
   <a class="nav" href="#profile" data-view="profile"><i class="ri-settings-3-line"></i>个人信息</a>
 </aside>
-<header><i class="ri-menu-line"></i>租户管理 / <b id="crumb">首页</b><div class="right"><span class="tenant">华辰科技</span>企业管理员<i class="ri-arrow-down-s-line"></i></div></header>
+<header><i class="ri-menu-line"></i>租户管理 / <b id="crumb">首页</b><div class="top-actions"><i class="ri-search-line"></i><i class="ri-fullscreen-line"></i><i class="ri-notification-3-line"></i><i class="ri-settings-3-line"></i><span class="top-avatar"><i class="ri-user-3-line"></i></span><span class="tenant">华辰科技</span>企业管理员<i class="ri-arrow-down-s-line"></i></div></header>
+<div class="view-tabs"><span class="view-tab active"><i class="ri-home-5-line"></i> 首页</span><span class="view-tab">访客申请</span><span class="view-tab">访问记录</span><span class="view-tab">场所管理</span><span class="view-tab">员工管理</span><span class="view-tab">部门管理</span></div>
 <main>
   <section class="view active" id="dashboard">
-    <div class="head"><div><h1>首页</h1><div class="sub">一期基础运营概览 · 2026年7月31日</div></div><div class="actions"><button class="btn" onclick="downloadQr()"><i class="ri-download-2-line"></i>下载访客预约二维码</button></div></div>
-    <div class="cards"><div class="card"><label>今日申请</label><b>128</b><small>待审核 6 条</small></div><div class="card"><label>今日来访</label><b>82</b><small>当前在访 43 人</small></div><div class="card"><label>今日出访</label><b>79</b><small>未出访 3 人</small></div><div class="card"><label>场所设备</label><b>8</b><small>全部在线</small></div></div>
-    <div class="map-note"><b>前台映射：</b>访客 H5 提交单次或多次拜访申请 → 被访人 H5 审核 → 绑定设备编码的扫码终端核验进入/离开 → 后台申请记录与逐条访问记录更新；业务提醒统一通过短信发送。</div>
-    <div class="grid2"><div class="panel"><div class="panel-head">待审核申请<span>查看全部<i class="ri-arrow-right-line"></i></span></div><table><tbody><tr><td>张晨</td><td>被访人：李敏</td><td>今日 08:30-10:00</td><td><span class="tag warn">待审核</span></td></tr><tr><td>陈浩</td><td>被访人：赵雪</td><td>今日 13:30-15:00</td><td><span class="tag warn">待审核</span></td></tr></tbody></table></div><div class="panel"><div class="panel-head">最新进出<span>查看全部<i class="ri-arrow-right-line"></i></span></div><table><tbody><tr><td>张晨</td><td>北门</td><td>09:26 来访</td><td><span class="tag">成功</span></td></tr><tr><td>吴迪</td><td>南门</td><td>09:21 出访</td><td><span class="tag">成功</span></td></tr></tbody></table></div></div>
+    <div class="hero-overview">
+      <picture><source srcset="./assets/visitor-reception-hero.webp" type="image/webp"><img class="hero-scene" src="./assets/visitor-reception-hero.png" alt="访客出示二维码，企业前台核验接待的场景插画" width="1400" height="700" decoding="async" fetchpriority="high"></picture>
+      <div class="hero-content">
+        <div class="hero-greeting"><h1>上午好，企业管理员 👋</h1><p>欢迎使用华辰访客管理系统</p></div>
+        <div class="hero-metrics">
+          <div class="hero-metric"><i class="ri-file-add-line"></i><label>今日申请</label><b>128</b><small>待审核 6 条</small></div>
+          <div class="hero-metric"><i class="ri-user-follow-line"></i><label>今日来访</label><b>82</b><small>当前在访 43 人</small></div>
+          <div class="hero-metric"><i class="ri-logout-box-r-line"></i><label>今日出访</label><b>79</b><small>未出访 3 人</small></div>
+          <div class="hero-metric"><i class="ri-device-line"></i><label>场所设备</label><b>8</b><small>全部在线</small></div>
+        </div>
+      </div>
+      <div class="hero-meta"><i class="ri-information-line"></i>一期基础运营概览 · 2026年7月31日 · 数据更新于 10:25</div>
+    </div>
+    <div class="home-lists">
+      <div class="panel home-panel"><div class="panel-head">最新申请<span><button class="btn text" onclick="document.querySelector('[data-view=applications]').click()">查看全部<i class="ri-arrow-right-line"></i></button></span></div><table><thead><tr><th>申请编号</th><th>访客</th><th>拜访形式</th><th>申请来源</th><th>状态</th><th>操作</th></tr></thead><tbody>
+        <tr><td>VS202607310019</td><td>顾言</td><td>单次拜访</td><td><span class="tag">访客自主申请</span></td><td><span class="tag warn">待审核</span></td><td><button class="btn text" onclick="document.querySelector('[data-view=applications]').click()">处理</button></td></tr>
+        <tr><td>VS202607310018</td><td>张晨</td><td>单次拜访</td><td><span class="tag">访客自主申请</span></td><td><span class="tag enter">来访中</span></td><td><button class="btn text" onclick="viewApplication(0)">查看</button></td></tr>
+        <tr><td>VS202607310017</td><td>周悦</td><td>单次拜访</td><td><span class="tag proxy">被访人代申请</span></td><td><span class="tag warn">待来访</span></td><td><button class="btn text" onclick="viewApplication(1)">查看</button></td></tr>
+        <tr><td>VS202607310016</td><td>陈浩</td><td>多次拜访</td><td><span class="tag proxy">被访人代申请</span></td><td><span class="tag success">生效中</span></td><td><button class="btn text" onclick="viewApplication(2)">查看</button></td></tr>
+        <tr><td>VS202607300015</td><td>高远</td><td>单次拜访</td><td><span class="tag">访客自主申请</span></td><td><span class="tag bad">已失效</span></td><td><button class="btn text" onclick="viewApplication(3)">查看</button></td></tr>
+        <tr><td>VS202607300014</td><td>许舟</td><td>单次拜访</td><td><span class="tag">访客自主申请</span></td><td><span class="tag bad">审核失败</span></td><td><button class="btn text" onclick="viewApplication(5)">查看</button></td></tr>
+      </tbody></table><div class="pager"><span>展示最新 6 条</span><span class="pager-pages"><span>‹</span><span class="current">1</span><span>›</span></span></div></div>
+      <div class="panel home-panel"><div class="panel-head">最新访问<span><button class="btn text" onclick="document.querySelector('[data-view=access]').click()">查看全部<i class="ri-arrow-right-line"></i></button></span></div><table><thead><tr><th>记录编号</th><th>访客</th><th>拜访形式</th><th>进出方向</th><th>通行时间</th><th>操作</th></tr></thead><tbody>
+        <tr><td>AC202607310026</td><td>张晨</td><td>单次拜访</td><td><span class="tag enter">进入</span></td><td>07-31 09:26</td><td><button class="btn text" onclick="viewAccessRecord(0)">查看</button></td></tr>
+        <tr><td>AC202607300025</td><td>林清</td><td>多次拜访</td><td><span class="tag exit">离开</span></td><td>07-30 15:10</td><td><button class="btn text" onclick="viewAccessRecord(1)">查看</button></td></tr>
+        <tr><td>AC202607300024</td><td>林清</td><td>多次拜访</td><td><span class="tag enter">进入</span></td><td>07-30 13:20</td><td><button class="btn text" onclick="viewAccessRecord(2)">查看</button></td></tr>
+        <tr><td>AC202607300023</td><td>吴迪</td><td>单次拜访</td><td><span class="tag exit">离开</span></td><td>07-30 11:35</td><td><button class="btn text" onclick="viewAccessRecord(3)">查看</button></td></tr>
+        <tr><td>AC202607300022</td><td>吴迪</td><td>单次拜访</td><td><span class="tag enter">进入</span></td><td>07-30 09:11</td><td><button class="btn text" onclick="viewAccessRecord(4)">查看</button></td></tr>
+      </tbody></table><div class="pager"><span>展示最新 5 条</span><span class="pager-pages"><span>‹</span><span class="current">1</span><span>›</span></span></div></div>
+    </div>
   </section>
 
   <section class="view" id="venues"></section><section class="view" id="departments"></section><section class="view" id="accounts"></section><section class="view" id="employees"></section>
