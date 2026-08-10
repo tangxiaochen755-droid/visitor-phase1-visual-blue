@@ -8,7 +8,7 @@
 - 最近产品可见提交：`6ac3595`，优化前台图片加载与登录页安全区、品牌间距。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
-- 本地 `main` 已将登录背景、个人中心背景和默认头像切换为适配尺寸的 WebP，并完成登录页间距优化，正同步至 `origin/main` 与 GitHub Pages。
+- 本地 `main`、`origin/main` 与 GitHub Pages 已同步 WebP 资源和登录页间距优化；线上 HTML 与三张 WebP 的 SHA-1 均与本地一致。
 
 ## 活动任务
 
