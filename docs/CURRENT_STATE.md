@@ -5,10 +5,10 @@
 ## 当前基线
 
 - 主要维护版本：浅蓝设计版。
-- 最近产品可见提交：`66e2666`，调整登录背景主体位置，避免被登录卡片遮挡。
+- 最近产品可见提交：`6ac3595`，优化前台图片加载与登录页安全区、品牌间距。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
-- 本地 `main` 已包含小程序式 Tab、登录页和可替换背景切图，正同步至 `origin/main` 与 GitHub Pages。
+- 本地 `main` 已将登录背景、个人中心背景和默认头像切换为适配尺寸的 WebP，并完成登录页间距优化，正同步至 `origin/main` 与 GitHub Pages。
 
 ## 活动任务
 
