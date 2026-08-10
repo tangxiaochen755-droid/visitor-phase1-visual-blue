@@ -50,7 +50,7 @@ header{left:var(--side);height:64px;padding:0 24px;background:#fff;border-color:
 .home-lists{display:grid;grid-template-columns:1fr 1fr;gap:14px}.home-panel{margin:0;border-radius:9px;box-shadow:none}.home-panel .panel-head{height:47px;color:#112d52}.home-panel table{table-layout:fixed}.home-panel th{background:#f5f8fc;color:#536a85;padding:11px 9px}.home-panel td{padding:12px 9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.home-panel .btn.text{color:#126df4;min-height:28px}.home-panel .pager{display:flex;align-items:center;justify-content:space-between;padding:13px 14px}.pager-pages{display:flex;align-items:center;gap:6px}.pager-pages span{min-width:27px;height:27px;display:grid;place-items:center;border:1px solid #dce6f1;border-radius:4px;color:#6e8198}.pager-pages .current{background:#126df4;border-color:#126df4;color:#fff}
 /* 首页视觉比例校正：保留若依框架，只调整品牌、插画与统计卡片 */
 .brand{padding:0 16px;font-size:18px;white-space:nowrap;flex-wrap:nowrap;overflow:hidden;text-overflow:ellipsis}.brand:before{flex:0 0 28px}
-.hero-overview{min-height:440px}.hero-scene{inset:0 0 0 auto;width:68%;height:100%;object-fit:contain;object-position:right center}.hero-overview:after{background:linear-gradient(90deg,#f0f7ff 0%,#f0f7ff 31%,rgba(240,247,255,.94) 40%,rgba(240,247,255,.28) 61%,rgba(240,247,255,0) 78%)}.hero-content{padding:52px 40px 24px;width:59%}.hero-greeting h1{font-size:32px}.hero-metrics{margin-top:58px;gap:9px}.hero-metric{min-height:138px;padding:14px 15px}.hero-metric i{width:31px;height:31px;margin-bottom:8px;font-size:17px}.hero-metric b{margin:7px 0 5px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;font-size:27px;font-weight:600;line-height:1.15;font-variant-numeric:tabular-nums}
+.hero-overview{min-height:440px}.hero-scene{inset:0 0 0 auto;width:68%;height:100%;object-fit:contain;object-position:right center}.hero-overview:after{background:linear-gradient(90deg,#f0f7ff 0%,#f0f7ff 31%,rgba(240,247,255,.94) 40%,rgba(240,247,255,.28) 61%,rgba(240,247,255,0) 78%)}.hero-content{padding:52px 40px 24px;width:59%}.hero-greeting h1{font-size:32px}.hero-metrics{margin-top:58px;gap:9px}.hero-metric{min-height:138px;padding:14px 15px}.hero-metric .metric-image{display:block;width:36px;height:36px;object-fit:contain;margin-bottom:5px}.hero-metric b{margin:7px 0 5px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;font-size:27px;font-weight:600;line-height:1.15;font-variant-numeric:tabular-nums}
 body,button,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}.card b,.metric b{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
 @media(max-width:1180px){.dash-grid{grid-template-columns:1fr}.dashboard-cards{grid-template-columns:repeat(2,1fr)}}
 .config-table input[type="checkbox"]{width:16px;height:16px;accent-color:#126df4}
@@ -106,10 +106,10 @@ table th,table td{white-space:nowrap}table th:first-child,table td:first-child{p
       <div class="hero-content">
         <div class="hero-greeting"><h1>上午好，企业管理员 👋</h1><p>欢迎使用华辰访客管理系统</p></div>
         <div class="hero-metrics">
-          <div class="hero-metric"><i class="ri-file-add-line"></i><label>今日申请</label><b>128</b><small>待审核 6 条</small></div>
-          <div class="hero-metric"><i class="ri-user-follow-line"></i><label>今日来访</label><b>82</b><small>当前在访 43 人</small></div>
-          <div class="hero-metric"><i class="ri-logout-box-r-line"></i><label>今日出访</label><b>79</b><small>未出访 3 人</small></div>
-          <div class="hero-metric"><i class="ri-device-line"></i><label>场所设备</label><b>8</b><small>全部在线</small></div>
+          <div class="hero-metric"><img class="metric-image" src="assets/home-application.png" alt=""><label>今日申请</label><b>128</b><small>待审核 6 条</small></div>
+          <div class="hero-metric"><img class="metric-image" src="assets/home-arrival.png" alt=""><label>今日来访</label><b>82</b><small>当前在访 43 人</small></div>
+          <div class="hero-metric"><img class="metric-image" src="assets/home-departure.png" alt=""><label>今日出访</label><b>79</b><small>未出访 3 人</small></div>
+          <div class="hero-metric"><img class="metric-image" src="assets/home-device.png" alt=""><label>场所设备</label><b>8</b><small>全部在线</small></div>
         </div>
       </div>
       <div class="hero-meta"><i class="ri-information-line"></i>一期基础运营概览 · 2026年7月31日 · 数据更新于 10:25</div>
