@@ -5,14 +5,14 @@
 ## 当前基线
 
 - 主要维护版本：浅蓝设计版。
-- 最近产品可见提交：`30e7d8d`，优化申请记录状态、语义色、来源标签与提交栏。
+- 最近产品可见提交：`a321e3b`，修复提交区空层并升级小程序式底部 Tab。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
-- 本地 `main`、`origin/main` 与 GitHub Pages 已同步申请记录状态与提交栏优化；线上页面 SHA-1 与本地文件一致。
+- 本地 `main` 已包含提交区定位和小程序式 Tab 优化，正同步至 `origin/main` 与 GitHub Pages。
 
 ## 活动任务
 
-- `docs/tasks/TASK-002.md`：前台页面 UI 视觉设计，申请记录状态与提交栏优化已提交发布；精确移动端视口自动化截图待补。
+- `docs/tasks/TASK-002.md`：前台页面 UI 视觉设计，提交区定位和小程序式 Tab 优化已提交发布。
 
 ## 已完成
 
