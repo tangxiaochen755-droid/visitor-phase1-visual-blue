@@ -5,7 +5,7 @@
 ## 当前基线
 
 - 主要维护版本：浅蓝设计版。
-- 最近产品可见提交：`ffaab88`，新增前台验证码登录页和可替换背景切图。
+- 最近产品可见提交：`66e2666`，调整登录背景主体位置，避免被登录卡片遮挡。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
 - 本地 `main` 已包含小程序式 Tab、登录页和可替换背景切图，正同步至 `origin/main` 与 GitHub Pages。
