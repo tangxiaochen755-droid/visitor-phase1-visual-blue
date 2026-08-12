@@ -28,6 +28,7 @@
 - `frontends/enterprise-h5.html`：企业前台入口
 - `frontends/guard-terminal.html`：扫码设备端
 - `assets/`：本地图片和图标资源
+- `docs/integration/`：一期角色权限、业务流程、状态机、接口契约和联调验收对接包
 
 ## 版本职责
 
