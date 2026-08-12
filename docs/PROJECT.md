@@ -29,6 +29,7 @@
 - `frontends/guard-terminal.html`：扫码设备端
 - `assets/`：本地图片和图标资源
 - `docs/integration/`：一期角色权限、业务流程、状态机、接口契约和联调验收对接包
+- `docs/研发交付简版.md`：前端、后端首读的角色权限图、复杂流程图与对接边界
 
 ## 版本职责
 
