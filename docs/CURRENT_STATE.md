@@ -5,10 +5,10 @@
 ## 当前基线
 
 - 主要维护版本：浅蓝设计版。
-- 当前线上提交：`0f91778`，已完成企业前台表单间距与浏览器自动填充底色修复；超级管理端视觉规范同步已在本地提交 `333f57c`，但 GitHub 连接超时，尚未发布。
+- 当前线上提交：`f23b0a0`，已完成企业前台视觉修复与超级管理端视觉规范同步。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
-- 本地 `main` 为 `333f57c`，`origin/main` 为 `0f91778`，本地领先 1 个提交；GitHub Pages 尚未包含超级管理端新版。
+- 本地 `main`、`origin/main` 与 GitHub Pages 当前均为 `f23b0a0`；线上超级管理端已验证加载 TASK-006 新版样式。
 
 ## 活动任务
 
