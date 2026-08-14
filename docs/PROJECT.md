@@ -30,6 +30,10 @@
 - `assets/`：本地图片和图标资源
 - `docs/integration/`：一期角色权限、业务流程、状态机、接口契约和联调验收对接包
 - `docs/研发交付简版.md`：前端、后端首读的角色权限图、复杂流程图与对接边界
+- `docs/DESIGN_SYSTEM.md`、`design-tokens/`：设计规范、组件映射和机器可读语义 tokens
+- `CURSOR_HANDOFF.md`：Cursor 开发接手顺序、实现边界和后续改动编号
+- `docs/DELIVERY_MANIFEST.md`：阶段交付范围与包内容清单
+- `deliverables/visitor-phase1-cursor-handoff-20260814.zip`：源码与研发/设计交付包
 
 ## 版本职责
 

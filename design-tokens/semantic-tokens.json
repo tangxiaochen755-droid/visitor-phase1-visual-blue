@@ -1,0 +1,93 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "访客标品浅蓝版语义 Tokens",
+    "version": "1.0.0",
+    "market": "zh-CN",
+    "baseline": "ead78c4"
+  },
+  "color": {
+    "brand": {
+      "primary": {"$type": "color", "$value": "#1677FF"},
+      "primaryStrong": {"$type": "color", "$value": "#0F56B7"},
+      "primarySoft": {"$type": "color", "$value": "#EAF3FF"}
+    },
+    "text": {
+      "primary": {"$type": "color", "$value": "#172B4D"},
+      "secondary": {"$type": "color", "$value": "#64748B"},
+      "placeholder": {"$type": "color", "$value": "#9AAABD"},
+      "inverse": {"$type": "color", "$value": "#FFFFFF"}
+    },
+    "surface": {
+      "page": {"$type": "color", "$value": "#F5F9FD"},
+      "panel": {"$type": "color", "$value": "#FFFFFF"},
+      "subtle": {"$type": "color", "$value": "#F1F6FB"},
+      "hover": {"$type": "color", "$value": "#F7FBFF"},
+      "mask": {"$type": "color", "$value": "#15375752"}
+    },
+    "border": {
+      "default": {"$type": "color", "$value": "#DBE7F2"},
+      "soft": {"$type": "color", "$value": "#EDF3F8"},
+      "focus": {"$type": "color", "$value": "#438EE6"}
+    },
+    "status": {
+      "infoText": {"$type": "color", "$value": "#1849A9"},
+      "infoBg": {"$type": "color", "$value": "#DBEAFE"},
+      "successText": {"$type": "color", "$value": "#05603A"},
+      "successBg": {"$type": "color", "$value": "#D1FADF"},
+      "warningText": {"$type": "color", "$value": "#854A0E"},
+      "warningBg": {"$type": "color", "$value": "#FEF0C7"},
+      "dangerText": {"$type": "color", "$value": "#B42318"},
+      "dangerBg": {"$type": "color", "$value": "#FEE4E2"},
+      "neutralText": {"$type": "color", "$value": "#344054"},
+      "neutralBg": {"$type": "color", "$value": "#F2F4F7"}
+    }
+  },
+  "font": {
+    "family": {"$type": "fontFamily", "$value": ["PingFang SC", "Microsoft YaHei", "sans-serif"]},
+    "size": {
+      "caption": {"$type": "dimension", "$value": "12px"},
+      "body": {"$type": "dimension", "$value": "14px"},
+      "bodyLarge": {"$type": "dimension", "$value": "15px"},
+      "control": {"$type": "dimension", "$value": "16px"},
+      "title": {"$type": "dimension", "$value": "17px"},
+      "pageTitle": {"$type": "dimension", "$value": "22px"}
+    },
+    "weight": {
+      "regular": {"$type": "fontWeight", "$value": 400},
+      "medium": {"$type": "fontWeight", "$value": 500},
+      "semibold": {"$type": "fontWeight", "$value": 600}
+    }
+  },
+  "space": {
+    "2": {"$type": "dimension", "$value": "2px"},
+    "4": {"$type": "dimension", "$value": "4px"},
+    "8": {"$type": "dimension", "$value": "8px"},
+    "12": {"$type": "dimension", "$value": "12px"},
+    "16": {"$type": "dimension", "$value": "16px"},
+    "20": {"$type": "dimension", "$value": "20px"},
+    "24": {"$type": "dimension", "$value": "24px"},
+    "32": {"$type": "dimension", "$value": "32px"}
+  },
+  "radius": {
+    "control": {"$type": "dimension", "$value": "6px"},
+    "card": {"$type": "dimension", "$value": "8px"},
+    "dialog": {"$type": "dimension", "$value": "10px"},
+    "sheet": {"$type": "dimension", "$value": "12px"},
+    "pill": {"$type": "dimension", "$value": "999px"}
+  },
+  "size": {
+    "touchMin": {"$type": "dimension", "$value": "44px"},
+    "mobileControl": {"$type": "dimension", "$value": "44px"},
+    "mobileInput": {"$type": "dimension", "$value": "48px"},
+    "desktopControl": {"$type": "dimension", "$value": "36px"},
+    "desktopHeader": {"$type": "dimension", "$value": "64px"},
+    "desktopSidebar": {"$type": "dimension", "$value": "220px"},
+    "mobileContentMax": {"$type": "dimension", "$value": "430px"}
+  },
+  "shadow": {
+    "card": {"$type": "shadow", "$value": {"color": "#1E466E0A", "offsetX": "0px", "offsetY": "1px", "blur": "3px", "spread": "0px"}},
+    "dialog": {"$type": "shadow", "$value": {"color": "#1B4A773D", "offsetX": "0px", "offsetY": "24px", "blur": "70px", "spread": "0px"}}
+  }
+}
+
