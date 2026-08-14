@@ -5,14 +5,14 @@
 ## 当前基线
 
 - 主要维护版本：浅蓝设计版。
-- 当前线上提交：`f0be5b3`，已完成超级管理端指标卡装饰移除。
+- 当前线上提交：`156175a`，已完成长期时段、双状态、二维码期限与设备模型同步。
 - 线上地址：https://tangxiaochen755-droid.github.io/visitor-phase1-visual-blue/
 - 黑白版仅作为已确认功能交互基线。
-- 本地 `main`、`origin/main` 与 GitHub Pages 当前均为 `f0be5b3`；TASK-007 完成后将更新此基线。
+- 本地 `main`、`origin/main` 与 GitHub Pages 当前功能基线均为 `156175a`；线上租户后台已验证加载 TASK-007 新代码。
 
 ## 活动任务
 
-- 无；`TASK-007` 已完成待发布。
+- 无；`TASK-007` 已完成并发布。
 
 ## 已完成
 
