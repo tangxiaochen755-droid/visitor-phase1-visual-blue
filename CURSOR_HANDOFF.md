@@ -12,17 +12,16 @@
 4. `docs/DECISIONS.md`
 5. `docs/研发交付简版.md`
 6. `docs/DESIGN_SYSTEM.md`
-7. `design-tokens/semantic-tokens.json`
-8. `docs/integration/README.md`
+7. `docs/CURSOR_STYLE_ACCEPTANCE.md`
+8. `design-tokens/semantic-tokens.json`
+9. `docs/integration/README.md`
 
 ## 3. 原型入口
 
 | 文件 | 用途 |
 |---|---|
 | `index.html` | 入口导航 |
-| `frontends/enterprise-h5.html` | 统一企业 H5，支持访客/被访人角色演示 |
-| `frontends/visitor-h5.html` | 访客端独立入口 |
-| `frontends/visitee-h5.html` | 被访人端独立入口 |
+| `frontends/enterprise-h5.html` | 唯一企业 H5，支持访客/被访人角色演示 |
 | `frontends/guard-terminal.html` | 扫码设备端 |
 | `tenant-admin.html` | 企业租户后台 |
 | `super-admin.html` | 超级管理后台 |
@@ -32,6 +31,9 @@
 ## 4. 实现边界
 
 - 当前 HTML 中的数据和交互为原型演示数据，不得作为生产数据源。
+- 不得恢复或参考旧 `visitor-h5.html`、`visitee-h5.html`；前台实现只以 `enterprise-h5.html` 和当前产品文档为准。
+- `terminationPending` 是独立布尔标记；为 `true` 时 `visitStatus` 仍为 `VISITING`，不得扩展出 `PENDING_TERMINATION` 来访状态。
+- 批量审核必须逐条校验并返回逐条结果，单条失败不得回滚其他成功记录。
 - 后端必须实现租户隔离、权限范围、状态转换、并发幂等、审计和敏感字段保护。
 - 前端不得根据本地时间永久修改审核/来访状态；以服务端状态为准。
 - AppSecret、密码、验证码、二维码载荷不得进入前端日志或明文持久化。
@@ -40,7 +42,7 @@
 ## 5. 后续改动（必须保留标记）
 
 - `FUTURE-01`：冻结部门负责人是否包含下级部门。
-- `FUTURE-02`：冻结场所管理员审核、代申请、撤销/终止权限。
+- `FUTURE-02`：冻结部门负责人、场所管理员审核、代申请、撤销/终止权限；企业管理员对应权限已确认。
 - `FUTURE-03`：冻结二维码刷新、有效期和离线策略。
 - `FUTURE-04`：冻结短信自动重试、人工补发和失败处理技术方案。
 - `FUTURE-05`：冻结来访目的重名与排序规则。
@@ -48,4 +50,3 @@
 - `FUTURE-07`：将接口建议稿转换为正式 OpenAPI/Apifox，并补齐数据库设计、迁移和测试用例。
 
 这些编号应在后续需求、代码注释或 issue 中继续引用；确认前不得删除或改写成已完成。
-

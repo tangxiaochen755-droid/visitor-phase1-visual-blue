@@ -23,9 +23,7 @@
 
 - `tenant-admin.html`：租户后台
 - `super-admin.html`：超级管理后台
-- `frontends/visitor-h5.html`：访客端
-- `frontends/visitee-h5.html`：被访人端
-- `frontends/enterprise-h5.html`：企业前台入口
+- `frontends/enterprise-h5.html`：唯一当前企业前台入口，通过角色展示访客/被访人能力
 - `frontends/guard-terminal.html`：扫码设备端
 - `assets/`：本地图片和图标资源
 - `docs/integration/`：一期角色权限、业务流程、状态机、接口契约和联调验收对接包
@@ -34,6 +32,11 @@
 - `CURSOR_HANDOFF.md`：Cursor 开发接手顺序、实现边界和后续改动编号
 - `docs/DELIVERY_MANIFEST.md`：阶段交付范围与包内容清单
 - `deliverables/visitor-phase1-cursor-handoff-20260814.tar.gz`：源码与研发/设计交付包（UTF-8 文件名）
+- `deliverables/visitor-standard-hifi-prototype-20260911.zip`：四端浅蓝高保真原型独立交付包
+
+仓库中的 `frontends/visitor-h5.html`、`frontends/visitee-h5.html` 仅作历史追溯，不属于当前产品入口，也不得进入 Cursor 开发交付包。
+
+部署包、部署包测试与部署包主题预览不属于本仓库同步基线。
 
 ## 版本职责
 
