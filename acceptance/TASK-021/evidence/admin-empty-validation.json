@@ -1,0 +1,20 @@
+{
+  "route": "/login?redirect=/index",
+  "url": "http://chen12344518.gnway.cc/login?redirect=/index",
+  "button_found": true,
+  "before": "访客标品\n\n智慧管理 · 高效协同 · 安全可靠\n\n多维度数据可视化\n全链路安全防护\n灵活可扩展架构\nCopyright © 2018-2026 Open Source System. All Rights Reserved.\n欢迎登录\n\n请输入您的账号信息\n\n记住密码\n登 录\n\n系统接口500异常\n\n系统接口500异常",
+  "after": "访客标品\n\n智慧管理 · 高效协同 · 安全可靠\n\n多维度数据可视化\n全链路安全防护\n灵活可扩展架构\nCopyright © 2018-2026 Open Source System. All Rights Reserved.\n欢迎登录\n\n请输入您的账号信息\n\n请输入您的账号\n请输入您的密码\n请输入验证码\n记住密码\n登 录\n\n系统接口500异常\n\n系统接口500异常",
+  "http_errors": [
+    {
+      "status": 500,
+      "url": "http://chen12344518.gnway.cc/dev-api/system/config/encryptConfig"
+    },
+    {
+      "status": 500,
+      "url": "http://chen12344518.gnway.cc/dev-api/captchaImage"
+    }
+  ],
+  "page_errors": [
+    "Request failed with status code 500"
+  ]
+}

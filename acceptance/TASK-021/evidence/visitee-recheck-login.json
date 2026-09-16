@@ -1,0 +1,48 @@
+{
+  "url": "http://chen12344518.gnway.cc/h5?tenant=a8f3c2e1-6b4d-4e9a-9c1f-2d7e5b8a9011",
+  "text": "华辰科技有限公司\n被访人 · 王强\n⌕\n待审核0\n审核通过0\n审核拒绝0\n全部申请\n我代申请0\n筛选\n暂无符合条件的申请\n申\n代申请\n录\n记录\n行\n通行\n我\n我的",
+  "api_responses": [
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/system/config/encryptConfig",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": {\"enable\": true, \"signKey\": \"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6\", \"publicKey\": \"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxLp+drQ4BmlobB1lx74o\\r\\nEdFOD/nJ4mtIB5MT30HtkGk2jWTPVyLyMWx0nfXTYM5nNofcEcakz3HXZ/92n4Xu\\r\\nyhor3woZPBU/VcoNxoIGjWnR4K7P8x3X7Qll+8CV85xmmDa1cE5PDi0bgBWyny9i\\r\\nXdoybTITP+l+4LHAZR76ln8bki0TFbh3GmtCyGALyTjxcw6cFSG+NuuXRtkor+9F\\r\\nxBWPS5wARlcpiKSgJ9Hy08thXN2BuzU+bvqHtO5gyr+O963iKso/KWXO1E+KeBmR\\r\\n6jGgyJo7O5624ewnaDnY9huivRyZC6mr8jcJwqpVR3fj+J6a3aqOfR18EOVmTmaR\\r\\nhQIDAQAB\"}}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/h5/tenant/a8f3c2e1-6b4d-4e9a-9c1f-2d7e5b8a9011",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": {\"tenantUuid\": \"a8f3c2e1-6b4d-4e9a-9c1f-2d7e5b8a9011\", \"tenantName\": \"华辰科技有限公司\", \"auditMode\": \"1\", \"hostSmsLogin\": \"1\", \"tenantId\": 1, \"tenantAccount\": \"huachen\", \"shortName\": \"华辰科技\", \"status\": \"0\"}}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/h5/login",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": {\"tenantUuid\": \"a8f3c2e1-6b4d-4e9a-9c1f-2d7e5b8a9011\", \"role\": \"HOST\", \"tenantName\": \"华辰科技有限公司\", \"nickName\": \"王强\", \"tenantAccount\": \"huachen\", \"token\": \"<redacted>\"}}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/h5/me",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": \"pb8bp0NTeNjA3lYPLt5M5vPhYYsR7iAwG3jOm/p71enuJPaPQy6eykZybpeHYkTqXY8tfQ7yPkkdTYc5yOB3KtUD/865zKyqugkvDobPv6ME7pDlnbbiXsEKiLo6ACSRzRsteY91Hoji7IbcwfXuNXHWiJmpedV5V/t+eeghsmg5zGhQKD5AkqpWwhPjGsZ4WKnRAfABhpIdGSMkRJb3AzRCzA+OigrbG+TiNhdmtLRgHjE3jJUzsNZrN202cRR/7Do124q6iL/NU6Huw+44DU6FFUA49bmmtwd+uf429Ta/uI6/rhMp81pcIQ44gCAZQ92AW3OqefSRR4uG46ndxQMcqvhhAa/Vfyf4zDo76fW2xqoDCcmvrOrQ1ubK0e6nfc3qNqGsad1DllYx22l4PJg/r52Zsu/R5JYgBcTG8v7TpRRPEASs0vfz7mq/lQfVDq5ZCER0QZmcpCOHRoaEVxZjhLPlmUfY5UciadxcM52XU7xOWBkIq2qhiwEjUQFXNE+qlTKgxSyjVkqPRvgw8a62/Rg5XPXHaWsQvuiOZDvpQGlQVzrALONYqY2gLnnukgCYta5IYIIFn1DtML0Q/peq1iUdU5ExGMfBGQxXQd04lb4jDitJYy9bZvRJXjm1NE9Ej+X7w4ZWtJTEn3jZ+OJPQ97VLh3np8kOLDtn13jPTCTdD86pwCzDtThJYYjhjHzCEgJpk2nRcp6E/NH4/WMmrRoLeMfUkTIgopOL9rusAYj+7pMqges+t8OcObNCsDuK5hXUbXAFA8MUPng9e0+XVlMYCF0kP8zwg6hh74p7IiITz5/7ccjlR94CSopc\"}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/h5/settings",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": \"ba4uIgQM8mz5v6p7mv1Sy51PMRrHd1r8YYj5U1NLQo7yb56rLk7JJcMWsbFKYkzcVLcUKa/cZBJfyn8VFS/LRYKmyxQq6DH4SHOgTCtY8vEjNjt9jS4xNbKZ/fno2HabyESRGafx5qzWyRlXJcZZOyPzKh5hGP1V/0NhPxwBHSMz4lsaJKKfvHkNvHNJJLC0J2yi7ePRy8lxmw3XJFUYUy8JUmihUJQkpqLJXegAh6Tm4m7wEq1Bcfwbn+ccqdq/kdLEMMpkl2uSlUeHCX7iwVa/2tjOj1FLK7UdLkzs+nn/QumPeOu8SHqURQR0qFjGBa1R0Wz8Ih28BakFratYYBcnxVwK/oeDynCBS7HR6Z0cXlh4r9WCtvztqKdGdzOhAIMKQRkwnxxOsQoBmnRqZd3JO7d/Gd1YtrfIdSvXxGiz+bwY9gEK66/pYhN1naxblXiJgqVRCwDZh68FhThh/JN05DIc91OKVYix8YNd2kpnSEDVmUwGxh9bUJurB939Qnnyg7/KjZ+Zmb1QFNbhNK0CidNe+Mh3VnhbTSKATw1xdMqqydKVp36Se7utUebbuOJrCfkuzteY3pIDbo/ZlrE0CnNC73e6ufrBz4MftBEe1nUkKLgF4awjIpkvbMjWlqF16lEZj2jQL9TLNDIEB2sLeACtD43jBH1zrr+YQVph8WSP9gGv5nFQ6uOhFm+3HiLgDI2iicWyFihF/hq6T4C3IStwHaM3GP9CmPJptKHORJiDOKVeWNxuSKOGR/23AhZCnQ7LhSBdoiDk4SchGrSYGHIvOfdPfH74dzK/28i11VjWh33YudKYSleO4aD6RVD5YML3hMTgmLVau7Vi4BophwtTkjKblqVtT4DWHSXfOtw/TiUXs7/ozmAyJCgp5Qeph6nMPYvP5Y5dyosXvTPFy0UWJ0fnIAvgZ9hXc0nF4vGN5UJGEe5ad1DtCUaqUK9Iz9kCXhOR4dg6vhl1A9K6U7zXMGT4OD7GeqEkshR7WgCB5ld43f2WsAWuSk5ouJZpCmwDHbkfSIK5MwMjB/aPmBEl6JjkyAH6zAaVMBP9Cg96L9kIy2cqL35pl9aZj71zQ0Ao3b83lSaHXem+URw3cSyul090XlyoXORlDKn5lRu1sjkQg5lsXM1tqmvxG6ADk1riikaeN/Mx7+Z11Wd9MNGSWGkZhFCUu401901lrKbAdHxhLDaU1EfuqzPo0vHlTeKs33Tc1U15jlErh3VQ1gsVyguVF6DWx87yFEBUjInSaywPjFvT5UNkYwiyA5jm+z9TUSFPyAEBOzvhSfCYgSzUOjqE5ooV5Mf2kMUSPOYQ04KclyE5ujI30KBdeAcrX4UKnR1lZgsnezGG7ihIqjK6l75Sev7Ud4fsy5q0BV3Vs5NKOdZ0YQB4FNmIGUibqXozQoUhZ3JuFU1fQqVGQcBADV6Y1bSy1OY5XhAw1O2il7qQ/wIBhCIbMFviUuj94KYAnzwAkCIHyGnuAJz+dkXjOSo2lS6n7349IFzpaJt3YxYXm8kLj2/DhSB9vg7lcAQXHUloOCdGlCnqb5ckEXPXqcoAH5qQmE10E7NaEKgYKxvAfxyAIfkhpOgA2PrWvDjAdnJoQMC6bDQbC9N1BB3pnW+00Y8DyzL+C9svHj4j/nZ7tmAmCneRyTuU1bKTEXB3wxMEGz7mFC2h0GqtkXGnfr87iKm/r1NDB5b3OmdNcYJ7rvDs2KAos81WZgKTIK/QC8Bf/n4ACWcw3JpJTRiYnSsNg6NQ2qkMulF09/fRzLCTg4yjp+MA7RKClkZ8gMuxYIYDsR99+qjJxmMYqnlYFN8MBJmjyFn8PAYwYM2HkT6/BfNLpK+QTk4RjI2O1DRKSu+nP+lZTQdyN44InizD5yPMwJvGh9QMIoCL3N3zYC/Wa34WjusM9mpOQQwVlWLaC3xm1ALgEFG8my7cBt/E3SVosG27cAQpZa"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/h5/hosts/1/entrances",
+      "body": "{\"msg\": \"操作成功\", \"code\": 200, \"data\": \"KBDpnSIzXOPqV3ld/qbusHJX821QYeFXK84+CVRQyAV7YX0CZEi7VlJBai5M4FjEYvFXZ5hozSh4262yGLaibZpqjnV/0+f4sknfHfu0KavEEjKB16HGOD+5clbnzU03/TGOIXokGLV+vtNDY/Zgan9B3JI8xabP4w0FEihMxP+em6EismQVzzOQbx0owAwmoeU5HzZhRoAQOgpXeLmKQnMRktMbKrlTBHMbBzo+4Jt+WhUAHdtA+3/ozeGYjr2vlcbeRdw3Kbk05ZLa+Eyrc6+y0aK/7LUdx+Lln/n46AOxMUWhSzGIAlsUzvDyFVXg6kP5EP595SNJiBkjkJf0wjvA1C80Ri7bwi6Dos2jlz1vJiVYgApEAkEML8Y+GR1PZS/r2OtxoDrqW00h/qJpfw==\"}"
+    }
+  ],
+  "navigations": [
+    "http://chen12344518.gnway.cc/h5/login",
+    "http://chen12344518.gnway.cc/h5/login",
+    "http://chen12344518.gnway.cc/h5/login",
+    "http://chen12344518.gnway.cc/h5?tenant=a8f3c2e1-6b4d-4e9a-9c1f-2d7e5b8a9011"
+  ],
+  "local_storage_keys": [
+    "vueuse-color-scheme",
+    "H5-Meta",
+    "H5-Token"
+  ],
+  "logged_in": true
+}

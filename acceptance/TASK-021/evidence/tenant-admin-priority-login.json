@@ -1,0 +1,29 @@
+{
+  "url": "http://chen12344518.gnway.cc/login?redirect=/index",
+  "title": "访客标品",
+  "text": "访客标品\n\n智慧管理 · 高效协同 · 安全可靠\n\n多维度数据可视化\n全链路安全防护\n灵活可扩展架构\nCopyright © 2018-2026 Open Source System. All Rights Reserved.\n欢迎登录\n\n请输入您的账号信息\n\n记住密码\n登 录",
+  "http_errors": [],
+  "api_responses": [
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/system/config/encryptConfig",
+      "body": "{\"msg\":\"操作成功\",\"code\":200,\"data\":{\"enable\":true,\"signKey\":\"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6\",\"publicKey\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxLp+drQ4BmlobB1lx74o\\r\\nEdFOD/nJ4mtIB5MT30HtkGk2jWTPVyLyMWx0nfXTYM5nNofcEcakz3HXZ/92n4Xu\\r\\nyhor3woZPBU/VcoNxoIGjWnR4K7P8x3X7Qll+8CV85xmmDa1cE5PDi0bgBWyny9i\\r\\nXdoybTITP+l+4LHAZR76ln8bki0TFbh3GmtCyGALyTjxcw6cFSG+NuuXRtkor+9F\\r\\nxBWPS5wARlcpiKSgJ9Hy08thXN2BuzU+bvqHtO5gyr+O963iKso/KWXO1E+KeBmR\\r\\n6jGgyJo7O5624ewnaDnY9huivRyZC6mr8jcJwqpVR3fj+J6a3aqOfR18EOVmTmaR\\r\\nhQIDAQAB\"}}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/captchaImage",
+      "body": "{\"msg\":\"操作成功\",\"img\":\"/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8AKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDtrW1ga1hZoIySikkoOeKsCztv+feL/vgU2z/484P+ua/yqyKiMY8q0IjGPKtCIWdr/wA+0P8A3wKeLK1/59of+/YqUU4U+WPYfLHsRCytP+fWH/v2KcLG0/59YP8Av2KrXWs6dYXcFrd3kME0+fKWRtu7FaCsD0NU6Vkm47hyx7EYsLP/AJ9YP+/YpwsLP/n0g/79iphTxU8sewcsexCNPsv+fS3/AO/Y/wAKcNOsv+fO3/79L/hU2QKpza3pttqMGnSXcf22c4jgBy54znA6DAJyaqNLm0irhyx7FkadY/8APnb/APfpf8KcNNsf+fK3/wC/S/4VOvNPFTyx7Byx7FcaZYf8+Vt/36X/AAp40yw/58bb/v0v+FT5ArmdV+InhnRb82V3qI89Th1jQv5f1wP061tRws68uWlByfkriaitzoRpen/8+Nt/35X/AAp40rT/APnwtf8Avyv+FM07U7LVbRLqxuYriB+jxtkf/WPtV4Vk6ai7Naj5Y9isNK07/nwtf+/K/wCFOGk6d/0D7X/vyv8AhVoU8UuWPYOWPYqjSdN/6B9p/wB+V/wqtqel6fHpF66WNqrrA5VhCoIO08jitYVV1b/kC3//AF7yf+gmlKMeV6ClGPK9DkrP/jzg/wCua/yqyKr2f/HnB/1zX+VWRTj8KHH4UOFMnk8uMtUgqnqOfszY9Koo8G8bajJrXi6ZS/yRHykz0AFafhK38QW+u2Cm8uG06KUM6LdHyyB/s55/KszX9HjfWpzBMPMLkuhPINR2Ooaj4WvIpSfOtWPKnof8DX3ixMcThIYXByjzcluWSd721ae1+33nLbllzSPo23k8xAafNKIkLGuG1TxlcWXhW11TRbNb1p2VdpydgIPOBycEYrmI/idq5mS21zSVtklIUSIjx7c9yGzkfjXylHKsTWpupBLS+l1fTfTc3c4p2Od8TeJdY1PxZeJYahdwxs/lpHFOyKQPXBxW34C0JtP1xNVu7oSXKhgEXnBYYJJPfBP+NcTfWF5FrExUEF5GIkHTk1LaXd94b1WC4EpdDyQDw47ivr68FiMPHC4KrBXhsl70rbq/T89znTs+aSPWpvi5ZaZr1xpt/psyRQyFPPikD599pAwPxNdzpPiPSNbgE2nX8FwpGSF"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/login",
+      "body": "{\"msg\":\"系统内部错误，请联系管理员\",\"code\":500}"
+    },
+    {
+      "status": 200,
+      "url": "http://chen12344518.gnway.cc/dev-api/captchaImage",
+      "body": "{\"msg\":\"操作成功\",\"img\":\"/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAA8AKADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDtrW1ga1hZoIySikkoOeKsCztv+feL/vgU2z/484P+ua/yqyKiMY8q0IjGPKtCIWdr/wA+0P8A3wKeLK1/59of+/YqQVm6x4k0nw+kTandiASkhPkZi2MZ4UH1FaU6DqSUIRu30SuxuMVujQFlaf8APrD/AN+xThY2n/PrB/37FYdj468M37hIdXtwx6CXMef++gK6GGeKdA8Uiup6MpyKqrhp0XapBxfmrAlF7DRYWf8Az6wf9+xThYWf/PpB/wB+xUwp4rLlj2Dlj2IRp9l/z6W//fsf4U4adZf8+dv/AN+l/wAKmyBWbdeJtEsJhDdapaRS5xsMo3D6jqKuFFzdoxu/QOWK6F8adY/8+dv/AN+l/wAKcNNsf+fK3/79L/hUsUiSxq8bBkYZDA5BFSio5I9g5Y9iuNMsP+fK2/79L/hTxplh/wA+Nt/36X/CrApstxDbxNLNIkca9Wc4A/GmoJ9A5Y9iMaXp/wDz423/AH5X/CnjStP/AOfC1/78r/hUdpq2n3rFbW9t52HURyqxH5Gr6kGh00nZoOWPYrDStO/58LX/AL8r/hThpOnf9A+1/wC/K/4VaFPFLlj2Dlj2Ko0nTf8AoH2n/flf8Kranpenx6Reuljaq6wOVYQqCDtPI4rWFVdW/wCQLf8A/XvJ/wCgmlKMeV6ClGPK9DkrP/jzg/65r/KrIqvZ/wDHnB/1zX+VWRTj8KHH4UI3CmvOvHGiw6zdQzXMswWBSqpHgdTyeQfQV6RjIrK1KwjljYsK6KFeph6iqUnaS6jaTVmeAaxptnYYWGWYyHor4P8ALFek/Cq2fTtPuJJCN10ytjuAAcfzNcB4kQP4ukgPCB1UfSvUNJs5INIlWCTypWiKo4/gOOD+FfT5tjK8cvo0Ks+Z1FzNvt0RjTiudtdCx8StZu7DwszWNzLbzNMimSJyrAc55FavgbUXuvCenPPcSTzGLLySuWZjk9SeTXjGs6brskby6tqLTuoJEZkZ/wAPQfhVTw/p97eBpNO1JrW4RsYDsn0OVpLLsJLL3D28bxldtJtaqyV97ab7Bzy59j1D4o+KdQ061hsNNeSIzgmSaPqF9Ae1eXanpMVrpcV21xJJdOQXDHI5/WvV7a1v7vRbZb87rpIwsjBt24jjOff"
+    }
+  ],
+  "logged_in": false
+}
