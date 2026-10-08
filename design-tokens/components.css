@@ -1,0 +1,48 @@
+/* Shared static-prototype components. Consume semantic tokens only. */
+.segmented-control {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 10px;
+  background: var(--color-surface-subtle);
+}
+
+.segmented-control__item {
+  height: 32px;
+  min-width: 60px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.segmented-control__item--wide {
+  min-width: 84px;
+}
+
+.segmented-control__item:hover:not(.active) {
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.segmented-control__item.active,
+.segmented-control__item[aria-pressed="true"] {
+  background: var(--color-brand-primary);
+  color: var(--color-text-inverse);
+  box-shadow: 0 3px 9px rgba(22, 119, 255, .18);
+  font-weight: 600;
+}
+
+.segmented-control__item:focus-visible {
+  outline: 3px solid rgba(22, 119, 255, .16);
+  outline-offset: 2px;
+}
+
+.segmented-control__item:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
