@@ -143,17 +143,15 @@ table th,table td{white-space:nowrap}table th:first-child,table td:first-child{p
 
   <section class="view" id="biDashboardSettings">
     <div class="head"><div><h1>BI 大屏设置</h1><div class="sub">配置企业访客大屏的启用状态、标题、刷新频率和模块位置</div></div><div class="actions"><button class="btn" onclick="resetBiDashboardSettings()"><i class="ri-refresh-line"></i>恢复默认</button><button class="btn" onclick="openBiDashboardPreview()"><i class="ri-eye-line"></i>预览大屏</button><button class="btn primary" onclick="saveBiDashboardSettings()"><i class="ri-save-line"></i>保存配置</button></div></div>
-    <div class="config-note" style="margin:0 0 14px"><b>配置规则：</b>大屏固定采用 1920×1080、2×2 四槽位布局。实时访客动态包含扫码详情，只能占左侧大模块；趋势和数据概览属于小模块，可在右侧上下换位。</div>
+    <div class="config-note" style="margin:0 0 14px"><b>配置规则：</b>大屏固定采用 1920×1080、2+1+1 四槽位布局。左侧大模块纵向占 2 个槽位；趋势和数据概览各占右侧 1 个槽位，可上下换位。</div>
     <div class="bi-config-grid">
       <div class="panel"><div class="panel-head">基础配置<span>保存后刷新大屏生效</span></div><div class="bi-form">
         <div class="bi-field"><label>大屏状态</label><div class="bi-switches"><label class="bi-choice"><input type="radio" name="biEnabled" value="true" checked>启用</label><label class="bi-choice"><input type="radio" name="biEnabled" value="false">停用</label></div></div>
         <div class="bi-field"><label for="biDashboardTitle">大屏名称</label><div><input id="biDashboardTitle" type="text" maxlength="30" value="访客管理可视化大屏"><small class="brand-help">企业名称会按现有品牌配置展示在左上角，大屏名称独立配置。</small></div></div>
         <div class="bi-field"><label for="biRefreshInterval">数据刷新频率</label><select id="biRefreshInterval"><option value="15">15 秒</option><option value="30" selected>30 秒</option><option value="60">60 秒</option></select></div>
         <div class="bi-field"><label for="biListLimit">实时动态条数</label><select id="biListLimit"><option value="6">6 条</option><option value="8" selected>8 条</option></select></div>
-        <div class="bi-field"><label for="biTrendPalette">趋势主题</label><div><select id="biTrendPalette"><option value="standard">标准蓝阶</option><option value="soft">柔和蓝阶</option></select><small class="brand-help">两条曲线仅使用设计 Tokens 中的品牌蓝阶，不借用业务状态色。</small></div></div>
-        <div class="bi-field"><label>演示扫码按钮</label><div><label class="bi-choice" style="display:inline-flex"><input id="biShowDemoScan" type="checkbox" checked>显示</label><small class="brand-help">仅用于原型演示；真实项目接入扫码事件后可关闭。</small></div></div>
       </div></div>
-      <div class="panel"><div class="panel-head">四槽位布局<span>1 个大模块 + 2 个小模块</span></div><div class="bi-layout"><div class="bi-canvas">
+      <div class="panel"><div class="panel-head">2+1+1 四槽位布局<span>左侧占 2 格 + 右侧各占 1 格</span></div><div class="bi-layout"><div class="bi-canvas">
         <div class="bi-slot large"><i class="ri-list-check-2"></i><b>实时访客动态</b><small>大模块 · 固定占 2 格</small></div>
         <div class="bi-slot"><i class="ri-line-chart-line"></i><b>右上小模块</b><select id="biRightTop" onchange="syncBiSlotOptions('top')"><option value="trend">访客趋势</option><option value="overview">今日访客概况</option></select></div>
         <div class="bi-slot"><i class="ri-dashboard-3-line"></i><b>右下小模块</b><select id="biRightBottom" onchange="syncBiSlotOptions('bottom')"><option value="overview">今日访客概况</option><option value="trend">访客趋势</option></select></div>
@@ -278,11 +276,11 @@ function clearBrandImage(){brandDraft.logo='';brandLogoFile.value='';updateBrand
 function resetBrandSettings(){brandDraft.logo='';brandLogoFile.value='';updateBrandPreview();toast('已恢复系统默认 Logo，保存后生效')}
 function saveBrandSettings(){const name=brandCompanyName.value.trim();if(!name){brandCompanyName.focus();return toast('请输入企业名称')}brandDraft.companyName=name;try{localStorage.setItem('phase1_tenant_brand',JSON.stringify(brandDraft));updateBrandPreview();toast('企业品牌配置已保存，H5 与后台登录页刷新后生效')}catch(error){toast('图片文件过大，请压缩后重新上传')}}
 initBrandSettings();
-const biDashboardDefaults={enabled:true,title:'访客管理可视化大屏',refreshInterval:30,listLimit:8,showDemoScan:true,rightTop:'trend',rightBottom:'overview',trendPalette:'standard'};
+const biDashboardDefaults={enabled:true,title:'访客管理可视化大屏',refreshInterval:30,listLimit:8,rightTop:'trend',rightBottom:'overview'};
 function readBiDashboardSettings(){try{return {...biDashboardDefaults,...JSON.parse(localStorage.getItem('phase1_bi_dashboard_config')||'{}')}}catch(error){return {...biDashboardDefaults}}}
-function initBiDashboardSettings(){const config=readBiDashboardSettings();document.querySelector(`[name="biEnabled"][value="${config.enabled}"]`).checked=true;biDashboardTitle.value=config.title;biRefreshInterval.value=String(config.refreshInterval);biListLimit.value=String(config.listLimit);biTrendPalette.value=config.trendPalette;biShowDemoScan.checked=config.showDemoScan;biRightTop.value=config.rightTop;biRightBottom.value=config.rightBottom;syncBiSlotOptions()}
+function initBiDashboardSettings(){const config=readBiDashboardSettings();document.querySelector(`[name="biEnabled"][value="${config.enabled}"]`).checked=true;biDashboardTitle.value=config.title;biRefreshInterval.value=String(config.refreshInterval);biListLimit.value=String(config.listLimit);biRightTop.value=config.rightTop;biRightBottom.value=config.rightBottom;syncBiSlotOptions()}
 function syncBiSlotOptions(changed){if(biRightTop.value===biRightBottom.value){if(changed==='top')biRightBottom.value=biRightTop.value==='trend'?'overview':'trend';else biRightTop.value=biRightBottom.value==='trend'?'overview':'trend'}}
-function collectBiDashboardSettings(){return {enabled:document.querySelector('[name="biEnabled"]:checked').value==='true',title:biDashboardTitle.value.trim(),refreshInterval:Number(biRefreshInterval.value),listLimit:Number(biListLimit.value),trendPalette:biTrendPalette.value,showDemoScan:biShowDemoScan.checked,rightTop:biRightTop.value,rightBottom:biRightBottom.value}}
+function collectBiDashboardSettings(){return {enabled:document.querySelector('[name="biEnabled"]:checked').value==='true',title:biDashboardTitle.value.trim(),refreshInterval:Number(biRefreshInterval.value),listLimit:Number(biListLimit.value),rightTop:biRightTop.value,rightBottom:biRightBottom.value}}
 function saveBiDashboardSettings(){const config=collectBiDashboardSettings();if(!config.title){biDashboardTitle.focus();return toast('请输入大屏名称')}if(config.rightTop===config.rightBottom)return toast('两个小槽位不可选择同一模块');localStorage.setItem('phase1_bi_dashboard_config',JSON.stringify(config));toast('BI 大屏配置已保存，刷新大屏后生效')}
 function resetBiDashboardSettings(){localStorage.removeItem('phase1_bi_dashboard_config');initBiDashboardSettings();toast('已恢复默认配置')}
 function openBiDashboardPreview(){window.open('./bi-dashboard.html?preview=1','_blank','noopener')}
